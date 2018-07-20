@@ -30,6 +30,8 @@ def can_be_created_in_a_block(args = {})
     a.release_date = 1990
   else
     a = Movie.new
+    a.title = args[:title]
+    a.release_date = args[:release_date]
   end
   a
 end
